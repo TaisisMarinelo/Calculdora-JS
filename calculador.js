@@ -73,4 +73,10 @@ document.getElementById('limparCalculo').addEventListener('click', limparCalculo
 
 
 const removerUltimoNumero = () => display.textContent = display.textContent.slice(0, -1);
-document.getElementById('backspace').addEventListener('click', removerUltimoNumero)
+document.getElementById('backspace').addEventListener('click', removerUltimoNumero);
+
+const inverterSinal = () => {
+    novoNumero = true;
+    atualizarDisplay(display.textContent * -1);
+}
+document.getElementById('inverter').addEventListener('click', inverterSinal);

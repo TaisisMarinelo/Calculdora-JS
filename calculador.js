@@ -15,7 +15,13 @@ const calcular = () => {
         const numeroAtual = parseFloat(display.textContent);
         novoNumero =  true;
         if(operador === '+'){
-            atualizarDisplay(numeroAnterior + numeroAtual)
+            atualizarDisplay(numeroAnterior + numeroAtual);
+        }else if (operador === '-') {
+            atualizarDisplay(numeroAnterior - numeroAtual);
+        }else if (operador === '/') {
+            atualizarDisplay(numeroAnterior / numeroAtual);
+        }else if(operador === '*'){
+            atualizarDisplay(numeroAnterior * numeroAtual);
         }
     }
 }

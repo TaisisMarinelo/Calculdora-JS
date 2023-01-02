@@ -70,3 +70,7 @@ const limparCalculo = () => {
     numeroAnterior = undefined;
 }
 document.getElementById('limparCalculo').addEventListener('click', limparCalculo);
+
+
+const removerUltimoNumero = () => display.textContent = display.textContent.slice(0, -1);
+document.getElementById('backspace').addEventListener('click', removerUltimoNumero)

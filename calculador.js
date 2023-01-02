@@ -14,7 +14,11 @@ const calcular = () => {
     if (operacaoPendente()) {
         const numeroAtual = parseFloat(display.textContent);
         novoNumero =  true;
-        if(operador === '+'){
+        /** Usando a função nativa do JS */
+        const resultado = eval(`${numeroAnterior}${operador}${numeroAtual}`);
+        atualizarDisplay(resultado);
+        /** código substituido pela funçao js eval
+         * if(operador === '+'){
             atualizarDisplay(numeroAnterior + numeroAtual);
         }else if (operador === '-') {
             atualizarDisplay(numeroAnterior - numeroAtual);
@@ -23,6 +27,7 @@ const calcular = () => {
         }else if(operador === '*'){
             atualizarDisplay(numeroAnterior * numeroAtual);
         }
+         */
     }
 }
 

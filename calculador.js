@@ -97,16 +97,26 @@ document.getElementById('decimal').addEventListener('click', inserirDecimal);
 
 
 const mapaTeclado = {
-    '0' : 'tecla0',
-    '1' : 'tecla1',
-    '2' : 'tecla2',
-    '3' : 'tecla3',
-    '4' : 'tecla4',
-    '5' : 'tecla5',
-    '6' : 'tecla6',
-    '7' : 'tecla7',
-    '8' : 'tecla8',
-    '9' : 'tecla9',
+    '0'         : 'tecla0',
+    '1'         : 'tecla1',
+    '2'         : 'tecla2',
+    '3'         : 'tecla3',
+    '4'         : 'tecla4',
+    '5'         : 'tecla5',
+    '6'         : 'tecla6',
+    '7'         : 'tecla7',
+    '8'         : 'tecla8',
+    '9'         : 'tecla9',
+    '/'         : 'operadorDividir',
+    '*'         : 'operadorMultiplicar',
+    '-'         : 'operadorSubtrair',
+    '+'         : 'operadorSomar',
+    '='         : 'igual',
+    'Enter'     : 'igual',
+    'Backspace' : 'backspace',
+    'C'         : 'limparDisplay',
+    'Escape'    : 'limparCalculo',
+    ','         : 'decimal',
 }
 
 const mapearTeclado = (evento) => {

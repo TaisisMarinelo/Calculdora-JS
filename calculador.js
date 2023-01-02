@@ -80,3 +80,17 @@ const inverterSinal = () => {
     atualizarDisplay(display.textContent * -1);
 }
 document.getElementById('inverter').addEventListener('click', inverterSinal);
+
+
+const existeDecimal = () => display.textContent.indexOf(',') !== -1;
+const existeValor = () => display.textContent.length > 0;
+const inserirDecimal = () => {
+    if (!existeDecimal()) {
+        if (existeValor()) {
+            atualizarDisplay(',');
+        }else{
+            atualizarDisplay('0,')
+        }
+    }
+}
+document.getElementById('decimal').addEventListener('click', inserirDecimal);
